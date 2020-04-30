@@ -5,189 +5,479 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
   <title>Frontend Mentor | Job Listings</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div id="banner">
+    <svg id="mobile-banner" xmlns="http://www.w3.org/2000/svg" width="375" height="156"><path fill="#63BABA" fill-rule="evenodd" d="M-86.732 487.429c-51.432-51.425-51.438-134.806-.013-186.237l.013-.013L309.926-95.424c51.441-51.434 134.836-51.434 186.277 0C547.634-44 547.64 39.38 496.216 90.813c-.005.004-.01.008-.013.013L99.543 487.429c-51.44 51.433-134.834 51.433-186.275 0zm-444.692 71.824c-51.432-51.424-51.438-134.806-.013-186.237l.013-.013L-134.766-23.6C-83.325-75.034.07-75.034 51.511-23.6c51.431 51.424 51.437 134.805.013 186.237l-.013.013-396.66 396.603c-51.44 51.433-134.834 51.433-186.275 0z"/></svg>
+    <svg id="desktop-banner" xmlns="http://www.w3.org/2000/svg" width="1366" height="156"><g fill="#63BABA" fill-rule="evenodd"><path d="M470.577 563.429c-51.432-51.425-51.438-134.806-.013-186.237l.013-.013L867.235-19.424c51.441-51.434 134.836-51.434 186.276 0 48.811 48.804 51.304 126.392 7.473 178.135l178.158-178.135c51.441-51.434 134.836-51.434 186.277 0 51.431 51.424 51.437 134.805.013 186.237-.005.004-.01.008-.013.013l-396.66 396.603c-51.44 51.433-134.834 51.433-186.275 0-48.812-48.805-51.304-126.394-7.471-178.138L656.853 563.43c-51.441 51.433-134.836 51.433-186.276 0zM342.268 45.605c-51.432-51.425-51.438-134.806-.013-186.237l.013-.013 396.658-396.603c51.441-51.434 134.836-51.434 186.277 0 51.431 51.424 51.437 134.805.013 186.237-.005.004-.01.008-.013.013L528.543 45.605c-51.44 51.433-134.834 51.433-186.275 0zm-444.692 71.824c-51.432-51.424-51.438-134.806-.013-186.237l.013-.013 396.658-396.603c51.441-51.434 134.836-51.434 186.277 0 51.431 51.424 51.437 134.805.013 186.237a80.86 80.86 0 01-.013.013L83.85 117.429c-51.44 51.433-134.834 51.433-186.275 0z"/></g></svg>
+  </div>
+  <div id="job-container">
   <!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
+  <div class="job-item">
+    <div class="job-logo-container">
+      <img src="/images/photosnap.svg" alt="" class="job-logo">
+    </div>
+    <div class="center-div">
+      <div class="job-item-head">
+          <p class="company-name">Photosnap</p>
+          <p class="bubble new">New!</p>
+          <p class="bubble featured">Featured</p>
+      </div>
+      <div class="job-title">
+        <p>Senior Frontend Developer</p>
+      </div>
+      <div class="job-details">
+        <p>
+          1d ago &bull;
+          Full Time &bull;
+          USA only
+        </p>
+      </div>
+    </div>
+
+    <div class="data-tags">
+      <!-- Role -->
+      <div class="tags" data-role="frontend">
+        Frontend
+      </div>
+    
+      <!-- Level -->
+      <div class="tags" data-level="junior">
+        Senior
+      </div>
+      
+      <!-- Languages -->
+      <div class="tags" data-languages="html">HTML</div>
+      <div class="tags" data-languages="css">CSS</div>
+      <div class="tags" data-languages="javascript">JavaScript</div>
+    </div>
+  </div>
   <!-- Item End -->
 
-  <!-- Item Start -->
-  Manage
-  New!
-  Featured
-  Fullstack Developer
-  1d ago
-  Part Time
-  Remote
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  Python
-  <!-- Tools -->
-  React
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Account
-  New!
-  Junior Frontend Developer
-  2d ago
-  Part Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  MyHome
-  Junior Frontend Developer
-  5d ago
-  Contract
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  CSS
-  JavaScript
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Loop Studios
-  Software Engineer
-  1w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Ruby
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  FaceIt
-  Junior Backend Developer
-  2w ago
-  Full Time
-  UK only
-  <!-- Role -->
-  Backend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  Ruby
-  <!-- Tools -->
-  RoR
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Shortly
-  Junior Developer
-  2w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  HTML
-  JavaScript
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Insure
-  Junior Frontend Developer
-  2w ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  Vue
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Eyecam Co.
-  Full Stack Engineer
-  3w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Python
-  <!-- Tools -->
-  Django
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  The Air Filter Company
-  Front-end Dev
-  1mo ago
-  Part Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
+    <!-- Item Start -->
+    <div class="job-item">
+      <div class="job-logo-container">
+        <img src="/images/manage.svg" alt="" class="job-logo">
+      </div>
+      <div class="center-div">
+        <div class="job-item-head">
+            <p class="company-name">Manage</p>
+            <p class="bubble featured">Featured</p>
+        </div>
+        <div class="job-title">
+          <p>Fullstack Developer</p>
+        </div>
+        <div class="job-details">
+          <p>
+            1d ago &bull;
+            Part Time &bull;
+            Remote
+          </p>
+        </div>
+      </div>
   
+      <div class="data-tags">
+        <!-- Role -->
+        <div class="tags" data-role="fullstack">
+          Fullstack
+        </div>
+      
+        <!-- Level -->
+        <div class="tags" data-level="midweight">
+          Midweight
+        </div>
+        
+        <!-- Languages -->
+        <div class="tags" data-languages="python">
+          Python
+        </div>
+
+        <!-- Tools -->
+        <div class="tags" data-tools="react">
+          React
+        </div>
+      </div>
+    </div>
+    <!-- Item End -->
+
+    <!-- Item Start -->
+    <div class="job-item">
+      <div class="job-logo-container">
+        <img src="/images/account.svg" alt="" class="job-logo">
+      </div>
+      <div class="center-div">
+        <div class="job-item-head">
+            <p class="company-name">Account</p>
+            <p class="bubble new">New!</p>
+        </div>
+        <div class="job-title">
+          <p>Junior Frontend Developer</p>
+        </div>
+        <div class="job-details">
+          <p>
+            2d ago &bull;
+            Part Time &bull;
+            USA only
+          </p>
+        </div>
+      </div>
+  
+      <div class="data-tags">
+        <!-- Role -->
+        <div class="tags" data-role="frontend">
+          Frontend
+        </div>
+      
+        <!-- Level -->
+        <div class="tags" data-level="junior">
+          Junior
+        </div>
+        
+        <!-- Languages -->
+        <div class="tags" data-languages="javascript">
+          Javascript
+        </div>
+
+        <!-- Tools -->
+        <div class="tags" data-tools="react">
+          React
+        </div>
+        <div class="tags" data-tools="sass">
+          Sass
+        </div>
+      </div>
+    </div>
+    <!-- Item End -->
+
+    <!-- Item Start -->
+    <div class="job-item">
+      <div class="job-logo-container">
+        <img src="/images/myhome.svg" alt="" class="job-logo">
+      </div>
+      <div class="center-div">
+        <div class="job-item-head">
+            <p class="company-name">MyHome</p>
+        </div>
+        <div class="job-title">
+          <p>Junior Frontend Developer</p>
+        </div>
+        <div class="job-details">
+          <p>
+            5d ago &bull;
+            Contract &bull;
+            USA only
+          </p>
+        </div>
+      </div>
+      <div class="data-tags">
+        <!-- Role -->
+        <div class="tags" data-role="frontend">
+          Frontend
+        </div>
+      
+        <!-- Level -->
+        <div class="tags" data-level="junior">
+          Junior
+        </div>
+        
+        <!-- Languages -->
+        <div class="tags" data-languages="javascript">
+          Javascript
+        </div>
+        <div class="tags" data-languages="css">
+          CSS
+        </div>
+      </div>
+    </div>
+    <!-- Item End -->
+
+    <!-- Item Start -->
+    <div class="job-item">
+      <div class="job-logo-container">
+        <img src="/images/loop-studios.svg" alt="" class="job-logo">
+      </div>
+      <div class="center-div">
+        <div class="job-item-head">
+            <p class="company-name">Loop Studios</p>
+        </div>
+        <div class="job-title">
+          <p>Software Engineer</p>
+        </div>
+        <div class="job-details">
+          <p>
+            1w ago &bull;
+            Full Time &bull;
+            Worldwide
+          </p>
+        </div>
+      </div>
+      <div class="data-tags">
+        <!-- Role -->
+        <div class="tags" data-role="fullstack">
+          Fullstack
+        </div>
+      
+        <!-- Level -->
+        <div class="tags" data-level="midweight">
+          Midweight
+        </div>
+        
+        <!-- Languages -->
+        <div class="tags" data-languages="javascript">
+          Javascript
+        </div>
+        <div class="tags" data-languages="ruby">
+          Ruby
+        </div>
+
+        <!-- Tools -->
+        <div class="tags" data-tools="sass">
+          Sass
+        </div>
+      </div>
+    </div>
+    <!-- Item End -->
+
+    <!-- Item Start -->
+    <div class="job-item">
+      <div class="job-logo-container">
+        <img src="/images/faceit.svg" alt="" class="job-logo">
+      </div>
+      <div class="center-div">
+        <div class="job-item-head">
+            <p class="company-name">FaceIt</p>
+        </div>
+        <div class="job-title">
+          <p>Junior Backend Developer</p>
+        </div>
+        <div class="job-details">
+          <p>
+            2w ago &bull;
+            Full Time &bull;
+            UK only
+          </p>
+        </div>
+      </div>
+  
+      <div class="data-tags">
+        <!-- Role -->
+        <div class="tags" data-role="backend">
+          Backend
+        </div>
+      
+        <!-- Level -->
+        <div class="tags" data-level="junior">
+          Junior
+        </div>
+        
+        <!-- Languages -->
+        <div class="tags" data-languages="ruby">
+          Ruby
+        </div>
+        
+        <!-- Tools -->
+        <div class="tags" data-tools="ror">
+          RoR
+        </div>
+      </div>
+    </div>
+    <!-- Item End -->
+
+    <!-- Item Start -->
+    <div class="job-item">
+      <div class="job-logo-container">
+        <img src="/images/shortly.svg" alt="" class="job-logo">
+      </div>
+      <div class="center-div">
+        <div class="job-item-head">
+            <p class="company-name">Shortly</p>
+        </div>
+        <div class="job-title">
+          <p>Junior Developer</p>
+        </div>
+        <div class="job-details">
+          <p>
+            2w ago &bull;
+            Full Time &bull;
+            Worldwide
+          </p>
+        </div>
+      </div>
+      <div class="data-tags">
+        <!-- Role -->
+        <div class="tags" data-role="frontend">
+          Frontend
+        </div>
+      
+        <!-- Level -->
+        <div class="tags" data-level="junior">
+          Junior
+        </div>
+        
+        <!-- Languages -->
+        <div class="tags" data-languages="html">
+          HTML
+        </div>
+        <div class="tags" data-languages="javascript">
+          JavaScript
+        </div>
+
+        <!-- Tools -->
+        <div class="tags" data-tools="sass">
+          Sass
+        </div>
+      </div>
+    </div>
+    <!-- Item End -->
+
+    <!-- Item Start -->
+    <div class="job-item">
+      <div class="job-logo-container">
+        <img src="/images/insure.svg" alt="" class="job-logo">
+      </div>
+      <div class="center-div">
+        <div class="job-item-head">
+            <p class="company-name">Insure</p>
+        </div>
+        <div class="job-title">
+          <p>Junior Frontend Developer</p>
+        </div>
+        <div class="job-details">
+          <p>
+            2w ago &bull;
+            Full Time &bull;
+            USA only
+          </p>
+        </div>
+      </div>
+      <div class="data-tags">
+        <!-- Role -->
+        <div class="tags" data-role="frontend">
+          Frontend
+        </div>
+      
+        <!-- Level -->
+        <div class="tags" data-level="junior">
+          Junior
+        </div>
+        
+        <!-- Languages -->
+       <div class="tags" data-languages="javascript">
+          JavaScript
+        </div>
+
+        <!-- Tools -->
+        <div class="tags" data-tools="vue">
+          Vue
+        </div>
+        <div class="tags" data-tools="sass">
+          Sass
+        </div>
+      </div>
+    </div>
+    <!-- Item End -->
+
+    <!-- Item Start -->
+   <div class="job-item">
+      <div class="job-logo-container">
+        <img src="/images/eyecam-co.svg" alt="" class="job-logo">
+      </div>
+      <div class="center-div">
+        <div class="job-item-head">
+            <p class="company-name">Eyecam Co.</p>
+        </div>
+        <div class="job-title">
+          <p>Full Stack Engineer</p>
+        </div>
+        <div class="job-details">
+          <p>
+            3w ago &bull;
+            Full Time &bull;
+            Worldwide
+          </p>
+        </div>
+      </div>
+      <div class="data-tags">
+        <!-- Role -->
+        <div class="tags" data-role="fullstack">
+          Fullstack
+        </div>
+      
+        <!-- Level -->
+        <div class="tags" data-level="midweight">
+          Midweight
+        </div>
+        
+        <!-- Languages -->
+        <div class="tags" data-languages="javascript">
+          JavaScript
+        </div>
+        <div class="tags" data-languages="python">
+          Python
+        </div>
+
+        <!-- Tools -->
+        <div class="tags" data-tools="django">
+          Django
+        </div>
+      </div>
+    </div>
+    <!-- Item End -->
+
+    <!-- Item Start -->
+   <div class="job-item">
+      <div class="job-logo-container">
+        <img src="/images/the-air-filter-company.svg" alt="" class="job-logo">
+      </div>
+      <div class="center-div">
+        <div class="job-item-head">
+            <p class="company-name">The Air Filter Company</p>
+        </div>
+        <div class="job-title">
+          <p>Front-end Dev</p>
+        </div>
+        <div class="job-details">
+          <p>
+            1mo ago &bull;
+            Part Time &bull;
+            Worldwide
+          </p>
+        </div>
+      </div>
+      <div class="data-tags">
+        <!-- Role -->
+        <div class="tags" data-role="frontend">
+          Frontend
+        </div>
+      
+        <!-- Level -->
+        <div class="tags" data-level="junior">
+          Junior
+        </div>
+        
+        <!-- Languages -->
+        <div class="tags" data-languages="javascript">
+          JavaScript
+        </div>
+
+        <!-- Tools -->
+        <div class="tags" data-tools="react">
+          React
+        </div>
+        <div class="tags" data-tools="sass">
+          Sass
+        </div>
+      </div>
+    </div>
+    <!-- Item End -->
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://asiav276.github.io/">Asia Valentine</a>.
   </div>
 </body>
 </html>
